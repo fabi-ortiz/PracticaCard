@@ -1,0 +1,94 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html{
+   /* height: 100%;*/
+    font-size: 21px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    /*height: 100%;*/
+}
+.hero-section{
+    width: auto;
+    height: auto;
+/*display: flex;*/
+min-height: 100%;
+align-items: center;
+justify-content: center;
+background-color: rgb(253, 253, 253);
+}
+.card-container{
+display: flex;
+gap:30px;
+width: 100%;
+/*justify-content: center;*/
+}
+.card{
+    width: 280px;
+    height: auto;
+    position: relative;
+    list-style: none;
+    width: auto;
+    transition: .3s ease;
+}
+.card::before{
+    /*content: "";*/
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+}
+.card-background{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background-size: 350px;
+    background-position: center;
+    filter: brightness(.9) saturate(1) contrast(1);
+    transform-origin: bottom;
+    transform: scale(1) translateZ(0);
+    transition: .3s ease;
+
+}
+.card:hover ,.card-background{
+    transform: scale(1.15) translateZ(0);
+    background-size: 240px;
+}
+.card-container:hover  .card:not(:hover){
+    transform: scale(.9)
+}
+.content{
+bottom: 10px;
+ left: 0;
+ padding: 25px;
+ position: absolute;
+}
+.texto1 {
+    width: 258px;
+    height: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*display: flex;*/
+    background-color: rgb(216, 189, 243);
+    color: black;
+    text-align: center;
+}
+.texto2 {
+    width: 258px;
+    height: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*display: flex;*/
+    text-align: center;
+    color: white;
+    background-color: rgb(231, 26, 26);
+}
